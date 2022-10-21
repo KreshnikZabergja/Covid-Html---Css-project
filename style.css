@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+header img{
+    height: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+    /* display: block; */
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav ul{
+    list-style: none;
+    margin-right: 40px;
+    
+}
+nav ul a{
+    text-decoration: none;
+    padding-right:  30px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(12, 89, 92);
+    font-weight: bold;
+
+}
+
+nav li::before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+ }
+ nav li::after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+ }
+ nav a::before {
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+
+ }
+ nav li:hover:before,
+nav li:hover::after,
+nav li:hover a::before{
+   width: 100%;
+   z-index: -1;
+}
+nav li a:hover{
+    color: blueviolet;
+    transition: all 0.2s ease;
+}
+.main{
+    width: 100%;
+    height: 80vh;
+    /* background-image: url(./covid19-1920-2c.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+.main-title{
+    width: 600px;
+    height: 300px;
+    padding-left: 120px;
+    padding-top: 280px;
+    color:rgba(10, 10, 10,);
+}
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+
+@keyframes animation2{
+    0%{
+        transform: translateX(125px);
+    }
+}
+.main h1{
+    font-size: 110px;
+    margin: 12px 0px;
+    color:blueviolet;
+    
+
+}
+@keyframes animation3{
+    0%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.main .covid{
+    animation: animation2 1s linear 1;
+
+}
+.main img{
+    width: 730px;
+    position: absolute;
+    top: 22%;
+    right: 280px;
+    
+}
+
+.main .covid1{
+    width: 150px;
+    position: absolute;
+    left:0;
+    top: 90px;
+    margin-left: 60px;
+    opacity: 0.5;
+    animation: animation3 1s linear 1;
+
+    
+}
+.main .covid2{
+    position: absolute;
+    width: 200px;
+    top: 500px;
+    left: 0;
+    margin-left: 490px;
+    opacity: 0.3;
+
+    
+}
+
+.main h2{
+    font-size: 50px;
+    border-bottom: 1px solid gray;
+    width: 63%;
+    color: cadetblue;
+}
+.main p{
+    line-height: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 17px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(12, 51, 53);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear 1;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.scale:hover h4 {
+transform: scale(1.4);   
+transition: 0.4s; 
+
+}
+.scale1:hover h4 {
+    transform: scale(1.4);   
+    transition: 0.4s; 
+    
+    }
+.scale2:hover h4 {
+        transform: scale(1.4);   
+        transition: 0.4s; 
+        
+        }
+.scale3:hover h4 {
+            transform: scale(1.4);   
+            transition: 0.4s; 
+            
+}
+
+.main a{
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: 16px 60px;
+    color: #fff;
+    border-radius: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.75);
+transition: 0.3s;
+}
+.main a:hover{
+    padding: 16px 70px;
+}
+.about{
+    width: 80%;
+    height: auto;
+}
+.hero{
+    width: 800px;
+    padding: 50px;
+    margin-left: 70px;
+    
+}
+.hero h3{
+    padding-bottom: 15px;
+    color: rgb(224, 128, 93);
+    font-size: 24px;
+    font-family: 'Roboto' , 'sans-serif';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.hero h1{
+    
+    padding-bottom: 15px;
+    color: blueviolet;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;   
+}
+.hero p{
+    letter-spacing: 1px;
+    font-family: 'Roboto', 'sans-serif';
+    margin-top: 12px;
+    color: gray;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 110px;
+    
+}
+.box{
+    width: 600px;
+    height: auto;
+    margin: 20px;
+    /* border: 1px solid; */
+    padding: 18px;
+    text-align: center;
+    line-height: 24px;
+}
+.box{
+    box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.75);
+border-radius: 12px;
+margin-left: 150px;
+}
+.box h1{
+    font-size: 30px;
+    padding-bottom: 16px;
+    font-family: 'Roboto', 'sans-serif';
+}
+.box p{
+    font-family: 'Roboto';
+    color: grey;
+    padding-bottom: 22px;
+}
+.box img{
+    width: 80px;
+    padding: 10px;
+    
+}
+.box a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    background: rgb(14, 189, 14);
+    padding: 12px 20px;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.4s;
+
+
+}
+.box-2 a{
+    background-color:  rgb(224, 128, 93);
+}
+
+.box-3 a{
+    background-color: blueviolet;
+}
+
+.box a:hover{
+    padding: 12px 30px;
+}
+.box:hover img{
+    transform: scale(1.3);
+    transition: all 0.4s ease;
+
+}
+
+.statistics{
+    width: 100%;
+    height: 200px;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    background-image: url(./images/statistics.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.numbers h1{
+    padding: 15px;
+    font-size: 45px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(86, 17, 151);
+    letter-spacing: 2px;
+}
+.numbers h4{
+    font-size: 25px;
+    font-family: 'Roboto';
+    color: rgb(59, 38, 9);
+}
+
+.statistics:hover h1{
+    transform: translateX(-20px);
+    transition: 0.9s  ease;
+}
+.spread{
+    width: 90%;
+    height: auto;
+    display: grid;
+}
+.spread-box img{
+    width: 100px ;
+    
+}
+.covid-spread{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+ 
+.human{
+    width: 400px;
+    margin-left: 165px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.human img{
+    width: 70px;
+}
+/* .human3 img{
+    height: 200px;
+} */
+.content{
+    width: 600px;
+    padding: 50px;
+    
+}
+.content:hover h1{
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: blueviolet;
+
+}
+.content h2{
+    color: rgb(207, 29, 29);
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content h1{
+    margin-bottom: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(71, 37, 102);
+}
+.content p{
+    letter-spacing: 2px;
+    font-family: 'Roboto';
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.human h1{
+    font-family: 'Roboto';
+    padding: 20px;
+    font-size: 27px;
+}
+.human p{
+    line-height: 24px;
+    font-family: 'Roboto';
+}
+.human:hover img{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+.human:hover h1{
+    color: blueviolet;
+    transition: 0.4s;
+}
+
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: #0D7CFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.footer-stats{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-box{
+    width: 400px;
+    padding: 60px;
+}
+
+.footer-stats ul {
+    list-style: none;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    
+    
+        
+}
+.footer-stats a{
+    text-decoration: none;
+    line-height: 50px;
+    color:rgb(48, 25, 25);
+}
+.footer-stats a:hover{
+    color: rgb(28, 202, 71);
+    transition: 0.4s;
+    padding: 30px;
+}
+
+.footer-stats h1{
+    margin-bottom: 30px;
+    font-family: 'Roboto', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    
+}
+.footer-stats p{
+    letter-spacing: 1px;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 24px;
+    color:rgba(10, 10, 10,);
+    margin-bottom: 10px;
+
+}
+.icons i {
+font-size: 30px;
+margin: 5px;
+cursor: pointer;
+color: rgb(29, 49, 54);
+}
+
+.icons i:hover{
+    color: rgb(28, 202, 71);
+    transition: 0.4s;
+    transform: scale(1.4);
+}
+.symptoms{
+    width: 100%;
+    height: 50vh;
+    margin-top: 170px;
+}
+.symp-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.symp-content{
+    width: 600px;
+}
+.symp-content h3{
+padding: 12px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(207, 29, 29);
+letter-spacing: 1px;
+}
+.symp-content:hover h3{
+    transition: 0.4s;
+    margin-left: 12px;
+}
+.symp-content:hover p{
+    color: #0D7CFF;
+    transition: 0.4s;
+}
+
+.symp-content h1{
+font-family: 'Roboto';
+font-size: 40px;
+margin-top: 12px;
+color: rgb(71, 37, 102);
+
+
+}
+.symp-content p{
+    font-family: 'Roboto';
+    line-height: 30px;
+    letter-spacing:1px;
+    padding: 20px;
+
+}
+.symp-img img{
+    width: 480px;
+}
+.symp-img:hover img{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+.prevention{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+
+}
+.prevention .content{
+    width: 44%;
+
+}
+.prevention .wrapper{
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    /* margin-right: 300px; */
+    
+  
+
+}
+.wrapper > .box{
+    width: 400px;
+    margin: 10px;
+}
+.prevention .content h2{
+    font-family: 'Roboto';
+    border-bottom: 1px solid;
+    width: 325px;
+}
+.wrapper .box a{
+    background-color: #0D7CFF;
+}
+.wrapper .box img{
+    width: 70px;
+}
+.wrapper .box h1{
+    font-size: 25px;
+}
+.our-doctors{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 159px;
+    
+}
+.our-doctors .content{
+   margin: 0 auto;
+   width: 300px;
+   padding-bottom: 0px;
+}
+.our-doctors .content h2{
+    margin-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.big-doc{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 150px;
+    
+}
+.big-doc div{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 22px;
+
+}.big-doc p{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.big-doc div h4{
+    margin-top: 12px;
+}
+.big-doc img{
+    width: 150px;
+    border-radius: 100%;
+    
+}
+
+@media only screen and (max-width: 480px ){
+    header nav{
+        display: none;
+    }
+    .logo img{
+        height: 100px;
+    }
+    
+    .main .covid{
+        display: none;
+    }
+    .covid2{
+        display: none;
+    }
+    .main-title h2{
+        font-size: 25px;
+        width: 138px;
+    }
+    .main-title a:hover{
+        padding: 16px 60px;
+    }
+    
+    .main-title h1{
+        font-size: 36px;
+    }
+    .main-title p{
+        width: 250px;
+    }
+    .main-title a{
+        font-size: 14px;
+        background: red;
+    }
+    .hero h1{
+        font-size: 23px;
+        width: 250px;
+    }
+    .hero p{
+        width: 220px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        
+    
+    }
+    .about{
+        width: 400px;
+    }
+    
+    
+    .container .box{
+        width: 300px;
+        margin-left: 0px;
+        
+    }
+    
+    
+    .statistics{
+        
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 330px;
+    }
+    
+    .statistics:hover h1{
+        transform: scale(1);
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .covid-spread{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .symptoms{
+        margin-bottom: 600px;
+    }
+    
+    .symp-img img{
+        width: 300px;
+        padding-top: 40px;
+    }
+    .prevention{
+        margin-bottom: 1200px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;  
+    }
+    .wrapper .box{
+        margin-bottom: 30px;
+    }
+    .prevention .content h1{
+        width: 300px;
+    }
+    .prevention p{
+        width: 400px;
+    }
+    .content h2{
+        font-size: 20px;
+    }
+    .content h1{
+        width: 300px;
+    }
+    .content p{
+        width: 300px;
+    }
+    .human{
+        width: 300px;
+        margin-left: 70px;
+        
+    }
+    .symptoms{
+        margin-bottom: 700px;
+    }
+    .prevention .content h2{
+        width: 200px;
+    }
+    .wrapper .box{
+        width: 300px;
+    }
+    .wrapper .box p{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .prevention{
+        margin-bottom: 1800px;
+    }
+    .big-doc{
+        display: flex;
+        flex-direction: column;
+    }
+    .big-doc div{
+        margin-bottom: 30px;
+    }
+    .footer-stats{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        height: auto;
+        background: #86adda;
+    }
+    
+}
+@media only screen and (max-width: 580px ){
+    header nav{
+        display: none;
+    }
+    .logo img{
+        height: 100px;
+    }
+    
+    .main .covid{
+        display: none;
+    }
+    .covid2{
+        display: none;
+    }
+    .main-title h2{
+        font-size: 25px;
+        width: 138px;
+    }
+    .main-title a:hover{
+        padding: 16px 60px;
+    }
+    
+    .main-title h1{
+        font-size: 36px;
+    }
+    .main-title p{
+        width: 250px;
+    }
+    .main-title a{
+        font-size: 14px;
+        background: red;
+    }
+    .hero h1{
+        font-size: 23px;
+        width: 250px;
+    }
+    .hero p{
+        width: 220px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        
+    
+    }
+    .about{
+        width: 400px;
+    }
+    
+    
+    .container .box{
+        width: 300px;
+        margin-left: 0px;
+        
+    }
+    
+    
+    .statistics{
+        
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 330px;
+    }
+    
+    .statistics:hover h1{
+        transform: scale(1);
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .covid-spread{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .symptoms{
+        margin-bottom: 600px;
+    }
+    
+    .symp-img img{
+        width: 300px;
+        padding-top: 40px;
+    }
+    .prevention{
+        margin-bottom: 1200px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;  
+    }
+    .wrapper .box{
+        margin-bottom: 30px;
+    }
+    .prevention .content h1{
+        width: 300px;
+    }
+    .prevention p{
+        width: 400px;
+    }
+    .content h2{
+        font-size: 20px;
+    }
+    .content h1{
+        width: 300px;
+    }
+    .content p{
+        width: 300px;
+    }
+    .human{
+        width: 300px;
+        margin-left: 70px;
+        
+    }
+    .symptoms{
+        margin-bottom: 700px;
+    }
+    .prevention .content h2{
+        width: 200px;
+    }
+    .wrapper .box{
+        width: 300px;
+    }
+    .wrapper .box p{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .prevention{
+        margin-bottom: 1800px;
+    }
+    .big-doc{
+        display: flex;
+        flex-direction: column;
+    }
+    .big-doc div{
+        margin-bottom: 30px;
+    }
+    .footer-stats{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        height: auto;
+        background: #86adda;
+    }
+    
+}

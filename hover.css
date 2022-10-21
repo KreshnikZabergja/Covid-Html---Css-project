@@ -1,0 +1,43 @@
+nav li::before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #76adeb;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+ }
+ nav li::after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #76adeb;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+ }
+ nav a::before {
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: #76adeb;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+
+ }
+ nav li:hover:before,
+nav li:hover::after,
+nav li:hover a::before{
+   display: none;
+}
+
+nav li a:hover{
+    color: blueviolet;
+    transition: all 0.2s ease;
+}
